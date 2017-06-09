@@ -1,0 +1,25 @@
+﻿@import "../../style.vars.scss";
+
+body {
+    $font-login: 18px;
+  
+
+    @mixin button-login {
+        background-color: #1e1d1d;
+        font-style: inherit;
+        font-family: sans-serif;
+        color: $basic-color;
+        font-size: $font-login;
+    }
+    
+    .btn-login {
+        @include button-login;
+    }
+
+ .btn-login {
+   background-color: #444444;
+}
+ .input-align{
+     text-align:left;
+ }
+}

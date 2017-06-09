@@ -1,0 +1,12 @@
+﻿<div class="sign-section">
+    <div ng-class=["ds-clock"]>
+        <ds-widget-clock></ds-widget-clock>
+    </div>
+    <div>
+        <button class="btn sign-button" ng-click="signVm.exit();" ng-disabled="signVm.isExitDisabled();">Exit</button>
+        <button class="btn sign-button" ng-click="signVm.enter();" ng-disabled="signVm.isEnterDisabled();">Enter</button>
+    </div>
+    <br />
+    <span class="message">{{signVm.Message}}&nbsp;</span>
+    <a href="#/report" ng-show="signVm.Message" class="message"> see report</a>
+</div>

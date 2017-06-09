@@ -1,0 +1,23 @@
+﻿@import "../../style.vars.scss";
+
+.reports-section {
+    $table-width: 60%;
+    
+     
+    @mixin table {
+        width: $table-width !important;
+    }
+
+
+    .table-report {
+        @include table;
+    }
+  .form-control{
+      color: $basic-color;
+  }
+  .table-custom{
+      text-align:-webkit-center;
+  }
+}
+
+

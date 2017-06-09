@@ -1,0 +1,30 @@
+﻿<br />
+<div ng-show="reportVm.user" class="reports-section container">
+    <input type="text" class="form-control" datepicker-popup="MMM-yyyy" ng-model="reportVm.datetime"
+           datepicker-options="{minMode: 'month'}" datepicker-mode="'month'" is-open="opened"/>
+    <br />
+    <table class="table table-report">
+        <thead>
+            <tr>
+                <th class="col-md-3 table-custom">Time End</th>
+                <th class="col-md-3 table-custom">Time Start</th>
+                <th class="col-md-3 table-custom">Date</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="date in reportVm.user.schedules | monthFilter:reportVm.datetime">
+            <tr>
+                <td class="col-md-3 table-custom">
+                    {{date.timeEnd}}
+                </td>
+
+                <td class="col-md-3 table-custom">
+                    {{date.timeStart}}
+                </td>
+
+                <td class="col-md-3 table-custom">
+                    {{date.date}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

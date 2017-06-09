@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "app/pages/login/sch.login.css",
+    "inputFile": "app/pages/login/sch.login.scss"
+  },
+  {
+    "outputFile": "app/pages/report/sch.report.css",
+    "inputFile": "app/pages/report/sch.report.scss"
+  },
+  {
+    "outputFile": "app/pages/sign/sch.sign.css",
+    "inputFile": "app/pages/sign/sch.sign.scss"
+  },
+  {
+    "outputFile": "app/sch.app.css",
+    "inputFile": "app/sch.app.scss"
+  },
+  {
+    "outputFile": "app/style.vars.css",
+    "inputFile": "app/style.vars.scss"
+  }
+]

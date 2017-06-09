@@ -1,0 +1,20 @@
+﻿<div class="container">
+     <div class="col-md-4 col-md-offset-4 well">
+        <form>
+            <div class="row">
+                <input ng-model="loginVm.username" required class="input-align"/>
+                <span>:userName</span>
+            </div>
+            <br />
+            <div class="row">
+                <input type="password" ng-model="loginVm.password" required class="input-align"/>
+                <span>:password</span>
+            </div>
+            <br />
+            <button ng-click="loginVm.login()" type="submit" class="btn btn-default btn-login">login</button>
+            <br />
+            <br />
+            <span>{{loginVm.error}}</span>
+        </form>
+    </div>
+    </div>
